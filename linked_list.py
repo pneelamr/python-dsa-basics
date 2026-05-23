@@ -26,6 +26,20 @@ class LinkedList:
         self.head = node
         self._size += 1
 
+    def insert(self, index, value):
+        if index < 0 or index > self._size:
+            raise IndexError(f"index {index} out of range for list of size {self._size}")
+        if index == 0:
+            self.prepend(value)
+            return
+        node = Node(value)
+        current = self.head
+        for _ in range(index - 1):
+            current = current.next
+        node.next = current.next
+        current.next = node
+        self._size += 1
+
     def delete(self, value):
         if self.head is None:
             return False
