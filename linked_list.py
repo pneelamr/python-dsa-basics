@@ -66,6 +66,16 @@ class LinkedList:
             index += 1
         return -1
 
+    def reverse(self):
+        prev = None
+        current = self.head
+        while current:
+            next_node = current.next
+            current.next = prev
+            prev = current
+            current = next_node
+        self.head = prev
+
     def __len__(self):
         return self._size
 
