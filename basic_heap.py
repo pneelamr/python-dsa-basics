@@ -1,0 +1,25 @@
+import heapq
+
+
+def push(heap, value):
+    heapq.heappush(heap, value)
+
+
+def pop(heap):
+    if is_empty(heap):
+        raise IndexError("pop from empty heap")
+    return heapq.heappop(heap)
+
+
+def peek(heap):
+    if is_empty(heap):
+        raise IndexError("peek from empty heap")
+    return heap[0]
+
+
+def is_empty(heap):
+    return len(heap) == 0
+
+
+def display(heap):
+    print(heap)
