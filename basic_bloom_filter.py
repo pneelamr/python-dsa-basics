@@ -1,3 +1,7 @@
+# Bloom Filter: Probabilistic set-membership structure using multiple hash functions and a bit array.
+# Guarantees no false negatives but allows false positives with tunable probability.
+# Space-efficient alternative to a hash set when exact membership is not required.
+
 import hashlib
 
 

@@ -1,3 +1,7 @@
+# Matrix Chain Multiplication: Find the optimal parenthesization of a matrix chain to minimize scalar multiplications.
+# Solved with interval DP — dp[i][j] = minimum cost to multiply matrices i through j.
+# O(n³) time; the optimal split point is tracked to reconstruct the parenthesization.
+
 # Time: O(2^n) — exponential branching over split points without caching
 # Space: O(n) — call stack depth bounded by number of matrices
 def matrix_chain_recursive(dims, i, j):

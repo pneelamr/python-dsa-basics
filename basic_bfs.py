@@ -1,3 +1,7 @@
+# Breadth-First Search (BFS): Graph traversal that explores all neighbors at the current depth before going deeper.
+# Uses a queue to process nodes level by level; naturally finds shortest paths in unweighted graphs.
+# Visits each vertex and edge once: O(V + E).
+
 # Time: O(V+E) — each vertex and edge visited at most once
 # Space: O(V) — visited list, seen set, and queue each hold at most V vertices
 def bfs(graph, start):

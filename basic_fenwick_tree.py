@@ -1,3 +1,7 @@
+# Fenwick Tree (Binary Indexed Tree): Compact array structure for prefix-sum queries and point updates.
+# Uses the lowest set bit of each index to determine the range each cell is responsible for.
+# Simpler and faster in practice than a segment tree when only prefix sums are needed.
+
 def create(arr):
     n = len(arr)
     tree = [0] * (n + 1)  # 1-indexed

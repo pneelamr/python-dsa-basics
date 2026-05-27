@@ -1,3 +1,7 @@
+# Priority Queue: Queue variant where each element carries a priority; lowest priority value dequeues first.
+# Backed by Python's heapq module, treating each entry as a (priority, value) tuple.
+# push is O(log n) and pop_min is O(log n).
+
 import heapq
 
 

@@ -1,3 +1,7 @@
+# Heap (Array): Min-heap built from scratch on a plain Python list without heapq.
+# Parent-child relationships are encoded by index: parent at i, children at 2i+1 and 2i+2.
+# Supports insert (sift-up) and extract-min (sift-down), both O(log n).
+
 def create():
     return []
 

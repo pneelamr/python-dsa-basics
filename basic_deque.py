@@ -1,3 +1,7 @@
+# Deque (Double-Ended Queue): Linear structure supporting O(1) push and pop at both front and back.
+# Implemented with a Python list; front operations use insert(0)/pop(0) for simplicity.
+# Common uses: sliding-window algorithms, palindrome checking, BFS with priority.
+
 # Time: O(n) push_front/pop_front (insert/pop at index 0 shifts elements), O(1) push_back/pop_back
 # Space: O(n) — stores n elements
 def push_front(deque, value):

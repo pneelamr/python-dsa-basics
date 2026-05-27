@@ -1,3 +1,7 @@
+# LRU Cache: Fixed-capacity cache that evicts the Least Recently Used entry when full.
+# Implemented with a dict for O(1) lookup and a doubly linked list to track access order.
+# get and put both run in O(1) by moving accessed nodes to the head of the list.
+
 from collections import deque
 
 

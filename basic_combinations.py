@@ -1,3 +1,7 @@
+# Combinations: Enumerate all ways to choose k elements from n, and all subsets summing to a target.
+# Backtracking picks elements in order (no repeats) to avoid generating the same combination twice.
+# Includes combinations(n, k) and combinations_sum(arr, target) variants.
+
 # Time: O(C(N,K) * K) — C(N,K) combinations, each takes O(K) to build
 # Space: O(K) — recursion stack depth
 

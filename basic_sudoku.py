@@ -1,3 +1,7 @@
+# Sudoku Solver: Fill a partially completed 9×9 grid so every row, column, and 3×3 box contains digits 1–9 exactly once.
+# Uses backtracking — find the next empty cell, try digits 1–9, recurse; undo on failure.
+# Constraint checking (row, col, box) prunes invalid placements before recursing.
+
 # Time: O(9^m) — m is number of empty cells, 9 choices per cell
 # Space: O(m) — recursion stack depth equals number of empty cells
 def solve_sudoku(board):

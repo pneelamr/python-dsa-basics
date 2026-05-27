@@ -1,3 +1,7 @@
+# Binary Search: Efficient search on a sorted array by repeatedly halving the search interval.
+# Compares the target to the midpoint; recurse or iterate on the left or right half accordingly.
+# O(log n) time; includes iterative, recursive, and first/last occurrence variants.
+
 # Time: O(log n) — halves search space each iteration
 # Space: O(1) iterative; recursive version uses O(log n) call stack
 def binary_search(arr, target):

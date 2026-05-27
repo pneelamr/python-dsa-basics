@@ -1,3 +1,7 @@
+# Subsets (Power Set): Enumerate all 2ⁿ subsets of a set of n elements, including the empty set.
+# Backtracking builds each subset by choosing to include or exclude each element in turn.
+# Iterative variant uses bit masking: each integer from 0 to 2ⁿ-1 represents one subset.
+
 # Time: O(2^N) — 2 choices per element (include or exclude), N elements
 # Space: O(N) — recursion stack depth
 

@@ -1,3 +1,7 @@
+# Prim's Algorithm: Greedy minimum spanning tree algorithm that grows the MST one vertex at a time.
+# Starts from an arbitrary vertex and always adds the minimum-weight edge crossing the MST frontier.
+# O((V + E) log V) with a binary heap; works well for dense graphs.
+
 import heapq
 
 

@@ -1,3 +1,7 @@
+# Disjoint Set (Union-Find): Tracks a partition of n elements into disjoint subsets.
+# Uses union-by-rank and path compression for near-O(1) amortized find and union.
+# Common uses: cycle detection, Kruskal's MST, connected components.
+
 def create(n):
     return {'parent': list(range(n)), 'rank': [0] * n}
 

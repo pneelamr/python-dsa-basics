@@ -1,3 +1,7 @@
+# Knight's Tour: Find a sequence of knight moves on an n×n chessboard that visits every square exactly once.
+# Backtracking tries all 8 possible knight moves from the current square; undoes on dead ends.
+# Warnsdorff's heuristic (move to the square with the fewest onward moves) is used to guide the search.
+
 # Time: O(8^(N^2)) — 8 moves per cell, N^2 cells
 # Space: O(N^2) — board and recursion stack
 

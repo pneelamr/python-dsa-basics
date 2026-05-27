@@ -1,3 +1,7 @@
+# Binary Tree: Hierarchical structure where each node has at most two children (left and right).
+# Nodes are stored as dicts with 'val', 'left', and 'right' keys.
+# Includes in-order, pre-order, post-order, and level-order traversals.
+
 def create_node(value):
     return [value, None, None]  # [value, left, right]
 

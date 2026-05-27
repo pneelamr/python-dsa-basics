@@ -1,3 +1,7 @@
+# Merge Sort: Divide-and-conquer sort that splits the array in half, recursively sorts each half, then merges.
+# Merge step combines two sorted halves by comparing elements one at a time.
+# Stable sort with guaranteed O(n log n) time; requires O(n) extra space.
+
 # Time: O(n log n) — divides array into halves and merges in linear time each level
 # Space: O(n) — merge creates temporary arrays totaling n elements
 def merge_sort(arr):

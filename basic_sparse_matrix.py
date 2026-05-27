@@ -1,3 +1,7 @@
+# Sparse Matrix: Matrix where most entries are zero, stored as a dict mapping (row, col) → value.
+# Avoids allocating memory for zeros, making it efficient when non-zero entries are few.
+# Supports get, set, row/column iteration, and matrix addition.
+
 def create(rows, cols):
     return {'data': {}, 'rows': rows, 'cols': cols}
 

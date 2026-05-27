@@ -1,3 +1,7 @@
+# Bucket Sort: Distribution sort that scatters elements into a fixed number of buckets by value range.
+# Each bucket is sorted individually (with insertion sort here), then concatenated.
+# O(n + k) average for uniformly distributed data; degrades to O(n²) with skewed distributions.
+
 # Time: O(n+k) average (uniform distribution), O(n²) worst (all elements in one bucket)
 # Space: O(n+k) — n elements spread across k buckets
 def bucket_sort(arr, num_buckets=10):

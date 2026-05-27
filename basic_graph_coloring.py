@@ -1,3 +1,7 @@
+# Graph Coloring: Assign colors to vertices such that no two adjacent vertices share the same color.
+# Backtracking tries each color for the current vertex, checks constraints, recurses, then undoes on failure.
+# The chromatic number is the minimum number of colors needed; this finds a valid coloring for a given k.
+
 # Time: O(M^V) — M colors, V vertices
 # Space: O(V) — color array and recursion stack
 

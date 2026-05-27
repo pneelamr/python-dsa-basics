@@ -1,3 +1,7 @@
+# Exponential Search: Finds the range where a target might exist by doubling the index each step.
+# Once the range [i/2, i] is identified, binary search is applied within it.
+# O(log n) time; useful when the array size is unknown or very large.
+
 # Time: O(log n) — exponential range-finding then binary search, both O(log n)
 # Space: O(1) — iterative with only index variables
 def exponential_search(arr, target):

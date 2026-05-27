@@ -1,3 +1,7 @@
+# Edit Distance (Levenshtein Distance): Minimum number of single-character edits (insert, delete, replace) to transform s1 into s2.
+# Solved with a 2D DP table where dp[i][j] = edit distance between s1[:i] and s2[:j].
+# O(m × n) time and space; the actual edit sequence can be recovered by backtracking the table.
+
 # Time: O(3^(m+n)) — three recursive branches (insert/delete/replace) without caching
 # Space: O(m+n) — call stack depth bounded by sum of string lengths
 def edit_distance_recursive(s1, s2, m, n):

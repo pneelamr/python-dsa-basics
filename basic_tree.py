@@ -1,3 +1,7 @@
+# Tree: Hierarchical structure with a root node where each node has a value and a list of children.
+# Unlike binary trees, nodes here can have any number of children.
+# Supports DFS (pre/post-order), BFS level-order traversal, height, and leaf counting.
+
 def create_node(value):
     return {'val': value, 'children': []}
 

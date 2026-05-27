@@ -1,3 +1,7 @@
+# Fibonacci: Sequence where each number is the sum of the two preceding ones: 0, 1, 1, 2, 3, 5, …
+# Classic introduction to dynamic programming via memoization (top-down) and tabulation (bottom-up).
+# Includes iterative O(n) and matrix exponentiation O(log n) variants.
+
 # Time: O(2^n) — each call branches into two recursive calls with no caching
 # Space: O(n) — call stack depth reaches n
 def fibonacci_recursive(n):

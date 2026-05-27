@@ -1,3 +1,7 @@
+# Palindrome: A string that reads the same forwards and backwards (e.g., "racecar", "madam").
+# Checked via slice reversal or two pointers converging from both ends.
+# Includes a variant that ignores non-alphanumeric characters and case.
+
 # Time: O(n) — slice creates reversed copy then compares character by character
 # Space: O(n) — reversed slice creates a new string of length n
 def is_palindrome(s):

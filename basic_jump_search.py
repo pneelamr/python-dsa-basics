@@ -1,3 +1,7 @@
+# Jump Search: Searches a sorted array by jumping ahead in fixed steps of size √n.
+# Once the block containing the target is identified, a linear scan within that block finds it.
+# O(√n) time — sits between linear O(n) and binary O(log n) search in complexity.
+
 import math
 
 

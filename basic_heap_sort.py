@@ -1,3 +1,7 @@
+# Heap Sort: Comparison-based sort that first builds a max-heap in-place, then sorts.
+# Repeatedly swaps the root (max) with the last element and sifts down to restore the heap.
+# In-place with no extra memory; always O(n log n) unlike quicksort.
+
 # Time: O(n log n) — build heap O(n), then extract each of n elements in O(log n)
 # Space: O(1) — sorts in-place using heap operations on the input array
 def heap_sort(arr):

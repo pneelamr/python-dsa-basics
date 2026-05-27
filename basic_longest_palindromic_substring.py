@@ -1,3 +1,7 @@
+# Longest Palindromic Substring: Find the longest contiguous substring that is a palindrome.
+# Expand-around-center: for each of 2n-1 centers (odd and even length), expand outward while characters match.
+# DP variant fills an n×n boolean table; both approaches run in O(n²) time.
+
 # Time: O(n²) — expands around each of 2n-1 centers; each expansion up to O(n)
 # Space: O(1) — only pointer variables and the result substring reference
 def lps_expand(s):

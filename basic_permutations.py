@@ -1,3 +1,7 @@
+# Permutations: Enumerate all n! orderings of a sequence of n elements.
+# Backtracking swaps each element into the current position, recurses, then swaps back.
+# Includes a variant for permutations with duplicates that skips repeated branches.
+
 # Time: O(N! * N) — N! permutations, each takes O(N) to build
 # Space: O(N) — recursion stack depth
 

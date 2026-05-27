@@ -1,3 +1,7 @@
+# Floyd-Warshall: All-pairs shortest-path algorithm using dynamic programming.
+# Considers every vertex k as an intermediate node and relaxes paths through it.
+# O(V³) time and O(V²) space; handles negative edges but not negative cycles.
+
 # Time: O(V³) — three nested loops each iterating over V vertices
 # Space: O(V²) — distance and next_vertex matrices of size V×V
 def floyd_warshall(graph):

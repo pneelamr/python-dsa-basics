@@ -1,3 +1,7 @@
+# Run-Length Encoding (RLE): Lossless compression that collapses runs of repeated characters.
+# encode replaces each run with (character)(count), e.g. "aaabbc" → "a3b2c1".
+# decode reverses this by parsing each (character, digits) pair and repeating the character.
+
 # Time: O(n) — single pass over the string counting consecutive characters
 # Space: O(n) — output list grows proportional to encoded string length
 def encode(s):

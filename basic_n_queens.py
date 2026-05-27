@@ -1,3 +1,7 @@
+# N-Queens: Place N queens on an N×N chessboard so no two queens share a row, column, or diagonal.
+# Solved with backtracking — place one queen per row, pruning positions attacked by earlier queens.
+# Has N! upper bound on placements but pruning drastically reduces explored nodes in practice.
+
 # Time: O(N!) — N choices for row 1, N-1 for row 2, etc. (pruning reduces this significantly)
 # Space: O(N) — board array and recursion stack depth
 def n_queens(n):

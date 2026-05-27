@@ -1,3 +1,7 @@
+# Depth-First Search (DFS): Graph traversal that explores as far as possible along each branch before backtracking.
+# Implemented both iteratively (with a stack) and recursively.
+# Useful for topological sort, cycle detection, and connected component analysis.
+
 # Time: O(V+E) — each vertex and edge visited at most once
 # Space: O(V) — seen set and recursion/iteration stack hold at most V vertices
 def dfs(graph, start):

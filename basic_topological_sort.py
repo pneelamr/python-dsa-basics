@@ -1,3 +1,7 @@
+# Topological Sort: Linear ordering of vertices in a Directed Acyclic Graph (DAG).
+# Every directed edge u→v has u appearing before v in the ordering.
+# Implemented via DFS post-order (reverse finish time) and Kahn's BFS algorithm.
+
 # Time: O(V+E) — visits each vertex and edge exactly once
 # Space: O(V) — visited set and stack/queue each store at most V vertices
 def topological_sort_dfs(graph):

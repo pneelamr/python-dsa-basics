@@ -1,3 +1,7 @@
+# Word Search: Find a target word in a 2D grid by traversing adjacent cells (up, down, left, right).
+# Backtracking marks a cell as visited, recurses on all four neighbors, then unmarks on backtrack.
+# O(m × n × 4^L) worst case where L is the word length; pruning on first-character mismatch speeds this up.
+
 # Time: O(M * N * 4^L) — M*N cells, 4 directions, L = word length
 # Space: O(L) — recursion stack depth
 

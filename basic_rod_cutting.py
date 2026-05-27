@@ -1,3 +1,7 @@
+# Rod Cutting: Given a rod of length n and prices for each length, find the maximum revenue from cuts.
+# Solved with bottom-up DP — dp[i] = max revenue for a rod of length i.
+# O(n²) time; a variant of the unbounded knapsack problem.
+
 # Time: O(2^n) — tries all cut combinations without caching
 # Space: O(n) — call stack depth bounded by rod length
 def rod_cut_recursive(prices, n):

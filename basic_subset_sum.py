@@ -1,3 +1,7 @@
+# Subset Sum: Determine whether any subset of an array sums exactly to a given target.
+# Solved with a boolean DP table: dp[i][s] = True if sum s is achievable using the first i elements.
+# O(n × target) time; also includes backtracking to enumerate all valid subsets.
+
 # Time: O(2^n) — each element either included or excluded without caching
 # Space: O(n) — call stack depth bounded by number of elements
 def subset_sum_recursive(arr, n, target):

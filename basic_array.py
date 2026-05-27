@@ -1,3 +1,7 @@
+# Array: Fixed-size sequential collection of elements accessed by index in O(1).
+# Backed by a Python list with a fixed capacity enforced at insert time.
+# Supports append, insert, delete, search, and in-place reversal.
+
 # Time: O(1) — appending to end of list is amortized constant time
 # Space: O(1) — no extra space needed (overall array structure is O(n))
 def append(arr, value):

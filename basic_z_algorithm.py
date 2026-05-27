@@ -1,3 +1,7 @@
+# Z Algorithm: Computes the Z-array where Z[i] is the length of the longest substring starting at position i that matches a prefix of the string.
+# Used for linear-time pattern matching by concatenating pattern + '$' + text and scanning the Z-array.
+# O(n) time and space; conceptually similar to KMP but easier to implement.
+
 # Time: O(n+m) — Z array built in linear time over concatenated string of length n+m+1
 # Space: O(n+m) — Z array and concatenated string both of size n+m+1
 def z_search(text, pattern):

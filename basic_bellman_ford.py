@@ -1,3 +1,7 @@
+# Bellman-Ford: Single-source shortest-path algorithm that relaxes all edges V-1 times.
+# Unlike Dijkstra, it handles negative edge weights and detects negative-weight cycles.
+# O(V × E) time; used in routing protocols like RIP.
+
 # Time: O(V*E) — relaxes all E edges V-1 times
 # Space: O(V) — distances and previous arrays store one entry per vertex
 def bellman_ford(graph, start):

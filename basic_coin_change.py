@@ -1,3 +1,7 @@
+# Coin Change: Given coin denominations and a target amount, find the fewest coins needed (or total ways).
+# Bottom-up DP fills a table of size (amount+1); each entry is built from smaller subproblems.
+# O(amount × len(coins)) time; covers both minimum-count and count-all-ways variants.
+
 # Time: O(amount^coins) — exponential branching without memoization
 # Space: O(amount) — call stack depth bounded by amount
 def coin_change_recursive(coins, amount):

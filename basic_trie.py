@@ -1,3 +1,7 @@
+# Trie (Prefix Tree): Tree where each path from root to a node spells out a string prefix.
+# Each node is a dict mapping characters to child nodes, with an 'end' marker for complete words.
+# Enables O(m) insert, search, and prefix-check where m is the word length.
+
 def create_trie():
     return {}
 

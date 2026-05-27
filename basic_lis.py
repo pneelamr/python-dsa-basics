@@ -1,3 +1,7 @@
+# Longest Increasing Subsequence (LIS): Find the longest strictly increasing subsequence within an array.
+# Naïve DP: dp[i] = length of LIS ending at index i — O(n²) time.
+# Patience sorting variant using binary search achieves O(n log n) time.
+
 import bisect
 
 

@@ -1,3 +1,7 @@
+# Segment Tree: Binary tree stored as a flat array supporting range queries and point updates.
+# Each node stores the aggregate (sum, min, or max) of a contiguous subarray.
+# Both query and update run in O(log n), making it ideal for range-query-heavy problems.
+
 # Time: O(n) build, O(log n) query/update — tree height is log n
 # Space: O(n) — internal tree array uses 4*n nodes
 def create(arr):

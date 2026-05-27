@@ -1,3 +1,7 @@
+# 0/1 Knapsack: Classic DP problem — given items with weights and values, maximize total value within capacity W.
+# Each item can be taken at most once (0/1 choice); solved by filling an (n+1) × (W+1) DP table.
+# O(n × W) time and space; the table can be compressed to O(W) by iterating in reverse.
+
 # Time: O(2^n) — each item is either included or excluded with no caching
 # Space: O(n) — recursive call stack depth
 def knapsack_recursive(weights, values, capacity, n):

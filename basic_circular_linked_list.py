@@ -1,3 +1,7 @@
+# Circular Linked List: Singly linked list where the tail node's next pointer wraps back to the head.
+# Useful for round-robin scheduling and cyclic iteration without a null terminator.
+# Traversal must track the starting node to detect when the cycle completes.
+
 def create_list():
     return {'head': None}
 

@@ -1,3 +1,7 @@
+# Radix Sort: Non-comparative sort processing integer digits from least significant to most significant.
+# Uses counting sort as a stable subroutine at each digit position.
+# O(d × (n + k)) time where d is the number of digits and k is the base (10 here).
+
 # Time: O(n*d) where d=number of digits — performs d counting sort passes over n elements
 # Space: O(n+k) — output array of size n plus count array of size k=10
 def radix_sort(arr):

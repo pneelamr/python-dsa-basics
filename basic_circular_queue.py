@@ -1,3 +1,7 @@
+# Circular Queue: Fixed-capacity queue using a list with wrap-around head and tail pointers.
+# Reuses freed slots at the front when new elements are enqueued, avoiding shifting.
+# Enqueue and dequeue are both O(1); capacity is set at creation time.
+
 def create_queue(capacity):
     return {'data': [None] * capacity, 'front': 0, 'rear': 0, 'size': 0, 'capacity': capacity}
 

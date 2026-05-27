@@ -1,3 +1,7 @@
+# Hamiltonian Path: Find a path through a graph that visits every vertex exactly once.
+# Backtracking extends the current path one vertex at a time, checking adjacency and the visited set.
+# NP-complete in general; the backtracking solution is exponential but exact.
+
 # Time: O(V!) — try every permutation of vertices
 # Space: O(V) — path array and recursion stack
 

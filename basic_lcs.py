@@ -1,3 +1,7 @@
+# Longest Common Subsequence (LCS): Find the longest sequence of characters present in both strings in the same relative order.
+# Solved with a 2D DP table where dp[i][j] = LCS length of s1[:i] and s2[:j].
+# O(m × n) time and space; the actual subsequence is recovered by tracing back through the table.
+
 # Time: O(2^(m+n)) — exponential branching with no caching
 # Space: O(m+n) — call stack depth bounded by sum of string lengths
 def lcs_recursive(s1, s2, m, n):

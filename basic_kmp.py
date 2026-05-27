@@ -1,3 +1,7 @@
+# Knuth-Morris-Pratt (KMP): Linear-time string pattern search using a failure function (partial match table).
+# The failure function encodes the longest proper prefix of the pattern that is also a suffix.
+# On a mismatch, the pattern is shifted by the failure function value — no character in text is re-examined.
+
 # Time: O(n+m) — linear scan of text (n) after O(m) LPS preprocessing
 # Space: O(m) — LPS array of size m for the pattern
 def kmp_search(text, pattern):

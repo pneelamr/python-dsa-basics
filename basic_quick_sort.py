@@ -1,3 +1,7 @@
+# Quick Sort: Divide-and-conquer sort that partitions the array around a pivot element.
+# Elements less than the pivot go left; greater go right; pivot is placed in its final position.
+# Average O(n log n); worst case O(n²) on already-sorted input with a bad pivot choice.
+
 # Time: O(n log n) average, O(n²) worst (poor pivot choice like already sorted input)
 # Space: O(log n) — recursive call stack depth on average
 def quick_sort(arr, low=0, high=None):

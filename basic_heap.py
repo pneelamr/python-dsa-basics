@@ -1,3 +1,7 @@
+# Heap: Complete binary tree satisfying the heap property — parent ≤ children (min-heap).
+# This implementation wraps Python's heapq module for push, pop, and peek.
+# Common uses: priority queues, scheduling, heap sort.
+
 import heapq
 
 

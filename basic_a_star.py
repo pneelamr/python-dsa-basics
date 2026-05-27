@@ -1,3 +1,7 @@
+# A* Search: Heuristic shortest-path algorithm combining actual path cost g(n) and estimated cost h(n).
+# Expands the node with the lowest f(n) = g(n) + h(n) using a min-heap.
+# With an admissible heuristic, always finds the optimal path; here Manhattan distance is used.
+
 import heapq
 
 

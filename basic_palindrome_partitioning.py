@@ -1,3 +1,7 @@
+# Palindrome Partitioning: Split a string into the fewest parts such that every part is a palindrome.
+# DP pre-computes which substrings are palindromes; a second DP finds the minimum cuts.
+# O(n²) time and space; backtracking variant enumerates all valid partitions.
+
 def is_palindrome(s, i, j):
     while i < j:
         if s[i] != s[j]:

@@ -1,3 +1,7 @@
+# Set: Unordered collection of unique elements backed by Python's built-in set type.
+# Supports add, remove, membership testing, and set operations (union, intersection, difference).
+# All core operations run in O(1) average due to the underlying hash table.
+
 # Time: O(1) average — add/remove/contains use Python set hashing
 # Space: O(n) — stores n elements
 def add(s, value):

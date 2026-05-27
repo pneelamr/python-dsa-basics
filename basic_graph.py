@@ -1,3 +1,7 @@
+# Graph: Set of vertices connected by edges, represented as an adjacency list (dict of lists).
+# Supports directed and undirected graphs via add_vertex, add_edge, and neighbor lookup.
+# Adjacency lists are memory-efficient for sparse graphs.
+
 def create_graph():
     return {}
 

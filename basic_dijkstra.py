@@ -1,3 +1,7 @@
+# Dijkstra's Algorithm: Greedy shortest-path algorithm for weighted graphs with non-negative edge weights.
+# Uses a min-heap priority queue to always expand the lowest-cost unvisited node.
+# O((V + E) log V) with a binary heap; does not handle negative edge weights.
+
 import heapq
 
 

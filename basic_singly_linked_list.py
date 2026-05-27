@@ -1,3 +1,7 @@
+# Singly Linked List: Linear chain of nodes where each node holds a value and a pointer to the next node.
+# Supports O(1) prepend and O(n) append, search, insert-at, and delete-at.
+# No random access — traversal always starts from the head.
+
 def create_list():
     return {'head': None}
 

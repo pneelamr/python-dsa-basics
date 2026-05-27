@@ -1,3 +1,7 @@
+# Doubly Linked List: Linked list where each node holds pointers to both the next and previous nodes.
+# Enables O(1) insertion and deletion at both ends (head and tail).
+# Useful as the backbone of LRU caches and deques.
+
 def create_list():
     return {'head': None, 'tail': None}
 

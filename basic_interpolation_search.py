@@ -1,3 +1,7 @@
+# Interpolation Search: Improved binary search for uniformly distributed sorted arrays.
+# Estimates the likely position of the target using linear interpolation on the value range.
+# O(log log n) average for uniform data; O(n) worst case for skewed distributions.
+
 # Time: O(log log n) average (uniform data), O(n) worst (skewed distribution)
 # Space: O(1) — only uses index and position variables
 def interpolation_search(arr, target):

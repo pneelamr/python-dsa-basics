@@ -1,3 +1,7 @@
+# Shell Sort: Generalization of insertion sort that sorts elements far apart first, then reduces the gap.
+# Uses a gap sequence (here: gap = n//2, halved each pass) to move elements closer to their final position faster.
+# Faster than O(n²) in practice; exact complexity depends on the gap sequence chosen.
+
 # Time: O(n log n) average depending on gap sequence, O(n²) worst case
 # Space: O(1) — sorts in-place using only gap and key variables
 def shell_sort(arr):

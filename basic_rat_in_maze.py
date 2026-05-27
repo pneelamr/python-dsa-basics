@@ -1,3 +1,7 @@
+# Rat in a Maze: Find all paths from the top-left to the bottom-right of an n×n grid, moving only to open cells.
+# Uses backtracking — move in a direction, mark visited, recurse, then unmark on backtrack.
+# A solution exists only if there is at least one unblocked path; all valid paths are collected.
+
 # Time: O(2^(N^2)) — each cell has 2 choices (move or not), N^2 cells
 # Space: O(N^2) — solution matrix and recursion stack
 

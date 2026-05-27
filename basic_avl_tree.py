@@ -1,3 +1,7 @@
+# AVL Tree: Self-balancing binary search tree maintaining a balance factor of -1, 0, or +1 at every node.
+# After each insert or delete, rotations (LL, RR, LR, RL) restore balance.
+# Guarantees O(log n) search, insert, and delete even in worst-case scenarios.
+
 def create_node(value):
     return {'val': value, 'left': None, 'right': None, 'height': 1}
 

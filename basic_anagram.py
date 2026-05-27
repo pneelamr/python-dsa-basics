@@ -1,3 +1,7 @@
+# Anagram: Two strings are anagrams if they contain exactly the same characters with the same frequencies.
+# is_anagram uses a frequency dict; find_anagrams uses a sliding window with two dicts to find all anagram positions in a text.
+# Both run in O(n) time and O(k) space where k is the alphabet size.
+
 # Time: O(n) — iterates over each string once to build and check frequency counts
 # Space: O(k) where k=alphabet size — count dict stores at most k distinct characters
 def is_anagram(s1, s2):

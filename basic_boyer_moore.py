@@ -1,3 +1,7 @@
+# Boyer-Moore: String search algorithm scanning the pattern right-to-left and using two heuristics to skip ahead.
+# Bad-character rule: on mismatch, shift so the bad character aligns with its last occurrence in the pattern.
+# Sub-linear in practice on natural text; O(n/m) best case, O(n × m) worst case.
+
 # Time: O(n/m) best (large alphabet, no matches), O(n*m) worst (many partial matches)
 # Space: O(k) where k=alphabet size — bad character table stores one entry per unique char
 def boyer_moore(text, pattern):

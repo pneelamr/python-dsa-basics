@@ -1,3 +1,7 @@
+# Counting Sort: Non-comparative integer sort that counts occurrences of each value.
+# Reconstructs the sorted array from the count array in O(n + k) time, where k is the value range.
+# Only works on non-negative integers; efficient when k is small relative to n.
+
 # Time: O(n+k) where k=value range — counts n elements then iterates over k buckets
 # Space: O(k) — count array proportional to value range k
 def counting_sort(arr):

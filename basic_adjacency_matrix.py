@@ -1,3 +1,7 @@
+# Adjacency Matrix: Graph representation using an n×n 2D list where matrix[i][j] = 1 means edge i→j.
+# O(1) edge lookup and update, but O(n²) space — best suited for dense graphs.
+# Includes add/remove edge, neighbor lookup, and BFS/DFS traversal.
+
 def create(n):
     return {'matrix': [[0] * n for _ in range(n)], 'n': n}
 

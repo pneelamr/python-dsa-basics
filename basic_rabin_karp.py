@@ -1,3 +1,7 @@
+# Rabin-Karp: String pattern search using rolling hashes to compare a sliding window against the pattern hash.
+# Hash collisions are verified by direct string comparison to avoid false positives.
+# O(n + m) average; O(n × m) worst case; well-suited for multi-pattern search.
+
 # Time: O(n+m) average (rare collisions), O(n*m) worst (all positions collide)
 # Space: O(1) — only hash variables and index counters
 def rabin_karp(text, pattern, base=256, mod=101):

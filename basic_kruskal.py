@@ -1,3 +1,7 @@
+# Kruskal's Algorithm: Greedy minimum spanning tree algorithm for undirected weighted graphs.
+# Sorts all edges by weight and adds each edge if it doesn't form a cycle (checked with Union-Find).
+# O(E log E) time; works well for sparse graphs.
+
 # Time: O(E log E) — dominated by sorting edges; union-find ops are near O(1)
 # Space: O(V+E) — parent/rank dicts for V vertices, sorted edge list for E edges
 def kruskal(vertices, edges):
