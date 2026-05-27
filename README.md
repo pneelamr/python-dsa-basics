@@ -1,4 +1,4 @@
-# DSA Reference Implementations
+# python-dsa-basics
 
 Procedural Python implementations of common data structures and algorithms — no OOP, no external libraries, plain Python types throughout.
 
