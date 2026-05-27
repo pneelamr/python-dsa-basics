@@ -1,3 +1,5 @@
+# Time: O(V+E) — each vertex and edge visited at most once
+# Space: O(V) — visited list, seen set, and queue each hold at most V vertices
 def bfs(graph, start):
     visited = []
     seen = {start}

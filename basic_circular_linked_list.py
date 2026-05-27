@@ -6,6 +6,8 @@ def create_node(value):
     return {'val': value, 'next': None}
 
 
+# Time: O(n) insert_front/insert_back/delete/search — must traverse to find tail or target
+# Space: O(n) — n nodes stored in the circular list
 def insert_front(ll, value):
     node = create_node(value)
     if ll['head'] is None:

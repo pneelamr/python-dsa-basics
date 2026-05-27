@@ -1,3 +1,5 @@
+# Time: O(n) build, O(log n) query/update — tree height is log n
+# Space: O(n) — internal tree array uses 4*n nodes
 def create(arr):
     n = len(arr)
     tree = [0] * (4 * n)

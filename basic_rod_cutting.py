@@ -1,3 +1,5 @@
+# Time: O(2^n) — tries all cut combinations without caching
+# Space: O(n) — call stack depth bounded by rod length
 def rod_cut_recursive(prices, n):
     if n == 0:
         return 0
@@ -7,6 +9,8 @@ def rod_cut_recursive(prices, n):
     return max_val
 
 
+# Time: O(n²) — at most n subproblems each trying up to n cut sizes
+# Space: O(n) — memo dict plus O(n) call stack
 def rod_cut_memoization(prices, n, memo=None):
     if memo is None:
         memo = {}
@@ -21,6 +25,8 @@ def rod_cut_memoization(prices, n, memo=None):
     return memo[n]
 
 
+# Time: O(n²) — fills dp array of size n+1, trying up to n cut sizes each
+# Space: O(n) — dp and cuts arrays of size n+1
 def rod_cut_tabulation(prices, n):
     dp = [0] * (n + 1)
     cuts = [0] * (n + 1)

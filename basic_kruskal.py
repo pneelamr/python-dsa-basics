@@ -1,3 +1,5 @@
+# Time: O(E log E) — dominated by sorting edges; union-find ops are near O(1)
+# Space: O(V+E) — parent/rank dicts for V vertices, sorted edge list for E edges
 def kruskal(vertices, edges):
     parent = {v: v for v in vertices}
     rank = {v: 0 for v in vertices}

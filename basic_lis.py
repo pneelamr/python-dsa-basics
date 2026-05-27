@@ -1,6 +1,8 @@
 import bisect
 
 
+# Time: O(2^n) — each element either included or excluded with no caching
+# Space: O(n) — call stack depth
 def lis_recursive(arr, prev, curr):
     if curr == len(arr):
         return 0
@@ -11,6 +13,8 @@ def lis_recursive(arr, prev, curr):
     return max(include, exclude)
 
 
+# Time: O(n²) — double nested loop comparing each pair of elements
+# Space: O(n) — dp and parent arrays of size n
 def lis_tabulation(arr):
     n = len(arr)
     if not arr:
@@ -36,6 +40,8 @@ def lis_tabulation(arr):
     return max_len, sequence[::-1]
 
 
+# Time: O(n log n) — binary search on tails array for each of n elements
+# Space: O(n) — tails array stores at most n elements
 def lis_optimized(arr):
     tails = []
     for val in arr:

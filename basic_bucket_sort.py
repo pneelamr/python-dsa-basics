@@ -1,3 +1,5 @@
+# Time: O(n+k) average (uniform distribution), O(n²) worst (all elements in one bucket)
+# Space: O(n+k) — n elements spread across k buckets
 def bucket_sort(arr, num_buckets=10):
     if not arr:
         return arr

@@ -1,3 +1,5 @@
+# Time: O(n) — single pass over the string counting consecutive characters
+# Space: O(n) — output list grows proportional to encoded string length
 def encode(s):
     if not s:
         return ''
@@ -13,6 +15,8 @@ def encode(s):
     return ''.join(result)
 
 
+# Time: O(n) — single pass over the encoded string parsing chars and counts
+# Space: O(n) — output list accumulates decoded characters
 def decode(s):
     result = []
     i = 0

@@ -1,3 +1,5 @@
+# Time: O(log n) — halves search space each iteration
+# Space: O(1) iterative; recursive version uses O(log n) call stack
 def binary_search(arr, target):
     low, high = 0, len(arr) - 1
 

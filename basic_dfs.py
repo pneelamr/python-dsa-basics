@@ -1,3 +1,5 @@
+# Time: O(V+E) — each vertex and edge visited at most once
+# Space: O(V) — seen set and recursion/iteration stack hold at most V vertices
 def dfs(graph, start):
     visited = []
     seen = set()

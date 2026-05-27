@@ -5,6 +5,8 @@ def create(capacity):
     return {'cache': {}, 'order': deque(), 'capacity': capacity}
 
 
+# Time: O(n) — get/put call deque.remove which scans up to n elements
+# Space: O(capacity) — cache and order deque bounded by capacity
 def get(lru, key):
     if key not in lru['cache']:
         return -1

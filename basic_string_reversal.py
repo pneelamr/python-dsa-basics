@@ -1,3 +1,5 @@
+# Time: O(n) — creates a reversed copy of the string character by character
+# Space: O(n) — new string of length n allocated for the result
 def reverse_string(s):
     return s[::-1]
 

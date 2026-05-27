@@ -1,3 +1,5 @@
+# Time: O(n log n) average, O(n²) worst (poor pivot choice like already sorted input)
+# Space: O(log n) — recursive call stack depth on average
 def quick_sort(arr, low=0, high=None):
     if high is None:
         high = len(arr) - 1

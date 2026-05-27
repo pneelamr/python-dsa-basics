@@ -7,6 +7,8 @@ def add_vertex(graph, vertex):
         graph[vertex] = []
 
 
+# Time: O(1) add_edge, O(V+E) bfs/dfs — each vertex and edge visited once
+# Space: O(V+E) — adjacency list stores all vertices and edges
 def add_edge(graph, v1, v2):
     add_vertex(graph, v1)
     add_vertex(graph, v2)

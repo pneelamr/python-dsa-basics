@@ -1,3 +1,5 @@
+# Time: O(n log n) — build heap O(n), then extract each of n elements in O(log n)
+# Space: O(1) — sorts in-place using heap operations on the input array
 def heap_sort(arr):
     n = len(arr)
 

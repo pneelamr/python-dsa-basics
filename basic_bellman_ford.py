@@ -1,3 +1,5 @@
+# Time: O(V*E) — relaxes all E edges V-1 times
+# Space: O(V) — distances and previous arrays store one entry per vertex
 def bellman_ford(graph, start):
     distances = {vertex: float('inf') for vertex in graph}
     distances[start] = 0

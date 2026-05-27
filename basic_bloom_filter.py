@@ -14,6 +14,8 @@ def _hashes(value, size):
     return indices
 
 
+# Time: O(k) where k=number of hash functions — computes k hashes per operation
+# Space: O(m) where m=bit array size — fixed-size bit array
 def add(bf, value):
     for i in _hashes(value, bf['size']):
         bf['bits'][i] = 1

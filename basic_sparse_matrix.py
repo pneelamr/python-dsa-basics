@@ -2,6 +2,8 @@ def create(rows, cols):
     return {'data': {}, 'rows': rows, 'cols': cols}
 
 
+# Time: O(1) — set_val/get_val use dict hashing on (row, col) key
+# Space: O(k) where k=number of non-zero elements stored
 def set_val(matrix, row, col, value):
     if value == 0:
         matrix['data'].pop((row, col), None)

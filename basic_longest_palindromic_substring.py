@@ -1,3 +1,5 @@
+# Time: O(n²) — expands around each of 2n-1 centers; each expansion up to O(n)
+# Space: O(1) — only pointer variables and the result substring reference
 def lps_expand(s):
     def expand(left, right):
         while left >= 0 and right < len(s) and s[left] == s[right]:
@@ -16,6 +18,8 @@ def lps_expand(s):
     return longest
 
 
+# Time: O(n²) — fills n×n dp table checking all substrings of each length
+# Space: O(n²) — dp boolean table of size n×n
 def lps_dp(s):
     n = len(s)
     dp = [[False] * n for _ in range(n)]

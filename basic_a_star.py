@@ -1,6 +1,8 @@
 import heapq
 
 
+# Time: O((V+E) log V) — like Dijkstra but guided by heuristic; heap ops are O(log V)
+# Space: O(V) — g_score, f_score, previous, and open_set each store at most V entries
 def a_star(graph, start, target, heuristic):
     open_set = [(0, start)]
     g_score = {vertex: float('inf') for vertex in graph}

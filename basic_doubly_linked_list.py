@@ -6,6 +6,8 @@ def create_node(value):
     return {'val': value, 'prev': None, 'next': None}
 
 
+# Time: O(1) insert_front/insert_back, O(n) delete/search — traverses up to n nodes
+# Space: O(n) — n nodes stored with prev/next pointers
 def insert_front(ll, value):
     node = create_node(value)
     if ll['head'] is None:

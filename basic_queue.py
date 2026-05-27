@@ -1,3 +1,5 @@
+# Time: O(1) enqueue (append), O(n) dequeue (pop(0) shifts all elements)
+# Space: O(n) — stores up to n elements
 def enqueue(queue, value):
     queue.append(value)
 

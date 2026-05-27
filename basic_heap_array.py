@@ -2,6 +2,8 @@ def create():
     return []
 
 
+# Time: O(log n) — push/pop sift up/down through at most log n levels
+# Space: O(n) — heap stored as a plain list of n elements
 def push(heap, value):
     heap.append(value)
     _sift_up(heap, len(heap) - 1)

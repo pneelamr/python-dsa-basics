@@ -6,6 +6,8 @@ def create_node(value):
     return {'val': value, 'next': None}
 
 
+# Time: O(1) insert_front, O(n) insert_back/delete/search — traverses up to n nodes
+# Space: O(n) — n nodes stored in the list
 def insert_front(ll, value):
     node = create_node(value)
     node['next'] = ll['head']

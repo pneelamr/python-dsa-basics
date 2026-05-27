@@ -1,3 +1,5 @@
+# Time: O(amount^coins) — exponential branching without memoization
+# Space: O(amount) — call stack depth bounded by amount
 def coin_change_recursive(coins, amount):
     if amount == 0:
         return 0
@@ -11,6 +13,8 @@ def coin_change_recursive(coins, amount):
     return min_coins
 
 
+# Time: O(amount*coins) — each amount computed once across all coins
+# Space: O(amount) — memo dict plus O(amount) call stack
 def coin_change_memoization(coins, amount, memo=None):
     if memo is None:
         memo = {}
@@ -29,6 +33,8 @@ def coin_change_memoization(coins, amount, memo=None):
     return memo[amount]
 
 
+# Time: O(amount*coins) — fills dp array of size amount+1, checking each coin
+# Space: O(amount) — dp array of size amount+1
 def coin_change_tabulation(coins, amount):
     dp = [float('inf')] * (amount + 1)
     dp[0] = 0

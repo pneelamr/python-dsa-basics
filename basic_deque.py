@@ -1,3 +1,5 @@
+# Time: O(n) push_front/pop_front (insert/pop at index 0 shifts elements), O(1) push_back/pop_back
+# Space: O(n) — stores n elements
 def push_front(deque, value):
     deque.insert(0, value)
 

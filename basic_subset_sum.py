@@ -1,3 +1,5 @@
+# Time: O(2^n) — each element either included or excluded without caching
+# Space: O(n) — call stack depth bounded by number of elements
 def subset_sum_recursive(arr, n, target):
     if target == 0:
         return True
@@ -9,6 +11,8 @@ def subset_sum_recursive(arr, n, target):
             subset_sum_recursive(arr, n - 1, target - arr[n - 1]))
 
 
+# Time: O(n*target) — at most n*target unique (n, target) subproblems cached
+# Space: O(n*target) — memo dict plus O(n) call stack
 def subset_sum_memoization(arr, n, target, memo=None):
     if memo is None:
         memo = {}
@@ -26,6 +30,8 @@ def subset_sum_memoization(arr, n, target, memo=None):
     return memo[(n, target)]
 
 
+# Time: O(n*target) — fills (n+1)×(target+1) dp table
+# Space: O(n*target) — dp table of size (n+1)×(target+1)
 def subset_sum_tabulation(arr, target):
     n = len(arr)
     dp = [[False] * (target + 1) for _ in range(n + 1)]

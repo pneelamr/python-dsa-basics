@@ -1,3 +1,5 @@
+# Time: O(n*d) where d=number of digits — performs d counting sort passes over n elements
+# Space: O(n+k) — output array of size n plus count array of size k=10
 def radix_sort(arr):
     if not arr:
         return arr

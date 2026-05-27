@@ -1,6 +1,8 @@
 import heapq
 
 
+# Time: O((V+E) log V) — each edge relaxation may push to heap, heap ops are O(log V)
+# Space: O(V) — distances, previous, and heap each store at most V entries
 def dijkstra(graph, start):
     distances = {vertex: float('inf') for vertex in graph}
     distances[start] = 0

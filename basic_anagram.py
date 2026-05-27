@@ -1,3 +1,5 @@
+# Time: O(n) — iterates over each string once to build and check frequency counts
+# Space: O(k) where k=alphabet size — count dict stores at most k distinct characters
 def is_anagram(s1, s2):
     if len(s1) != len(s2):
         return False
@@ -11,6 +13,8 @@ def is_anagram(s1, s2):
     return True
 
 
+# Time: O(n) — sliding window over text with O(1) dict comparison per step
+# Space: O(k) where k=alphabet size — two frequency dicts of at most k entries each
 def find_anagrams(text, pattern):
     n = len(text)
     m = len(pattern)

@@ -2,6 +2,8 @@ def create_trie():
     return {}
 
 
+# Time: O(m) where m=word length — each character visited once per operation
+# Space: O(m*n) total — m chars per word across n words stored in trie
 def insert(trie, word):
     node = trie
     for char in word:

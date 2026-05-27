@@ -1,3 +1,5 @@
+# Time: O(V+E) — visits each vertex and edge exactly once
+# Space: O(V) — visited set and stack/queue each store at most V vertices
 def topological_sort_dfs(graph):
     visited = set()
     stack = []

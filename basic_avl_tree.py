@@ -34,6 +34,8 @@ def rotate_left(z):
     return y
 
 
+# Time: O(log n) — AVL balance property guarantees height is O(log n)
+# Space: O(log n) — recursive call stack bounded by tree height
 def insert(root, value):
     if root is None:
         return create_node(value)

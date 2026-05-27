@@ -1,3 +1,5 @@
+# Time: O(1) — appending to end of list is amortized constant time
+# Space: O(1) — no extra space needed (overall array structure is O(n))
 def append(arr, value):
     arr += [value]
 

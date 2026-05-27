@@ -1,3 +1,5 @@
+# Time: O(n/m) best (large alphabet, no matches), O(n*m) worst (many partial matches)
+# Space: O(k) where k=alphabet size — bad character table stores one entry per unique char
 def boyer_moore(text, pattern):
     n = len(text)
     m = len(pattern)

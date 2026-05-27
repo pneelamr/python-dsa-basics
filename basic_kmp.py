@@ -1,3 +1,5 @@
+# Time: O(n+m) — linear scan of text (n) after O(m) LPS preprocessing
+# Space: O(m) — LPS array of size m for the pattern
 def kmp_search(text, pattern):
     n = len(text)
     m = len(pattern)

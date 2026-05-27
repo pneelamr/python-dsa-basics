@@ -1,3 +1,5 @@
+# Time: O(n²) worst/average, O(n) best (already sorted)
+# Space: O(1) — sorts in-place using only a key variable
 def insertion_sort(arr):
     for i in range(1, len(arr)):
         key = arr[i]

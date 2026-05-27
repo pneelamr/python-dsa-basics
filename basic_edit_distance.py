@@ -1,3 +1,5 @@
+# Time: O(3^(m+n)) — three recursive branches (insert/delete/replace) without caching
+# Space: O(m+n) — call stack depth bounded by sum of string lengths
 def edit_distance_recursive(s1, s2, m, n):
     if m == 0:
         return n
@@ -11,6 +13,8 @@ def edit_distance_recursive(s1, s2, m, n):
     return 1 + min(insert, delete, replace)
 
 
+# Time: O(m*n) — at most m*n unique (m, n) subproblems cached
+# Space: O(m*n) — memo dict plus O(m+n) call stack
 def edit_distance_memoization(s1, s2, m, n, memo=None):
     if memo is None:
         memo = {}
@@ -30,6 +34,8 @@ def edit_distance_memoization(s1, s2, m, n, memo=None):
     return memo[(m, n)]
 
 
+# Time: O(m*n) — fills (m+1)×(n+1) dp table
+# Space: O(m*n) — dp table of size (m+1)×(n+1)
 def edit_distance_tabulation(s1, s2):
     m, n = len(s1), len(s2)
     dp = [[0] * (n + 1) for _ in range(m + 1)]

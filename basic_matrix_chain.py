@@ -1,3 +1,5 @@
+# Time: O(2^n) — exponential branching over split points without caching
+# Space: O(n) — call stack depth bounded by number of matrices
 def matrix_chain_recursive(dims, i, j):
     if i == j:
         return 0
@@ -10,6 +12,8 @@ def matrix_chain_recursive(dims, i, j):
     return min_cost
 
 
+# Time: O(n³) — n² subproblems each trying up to n split points
+# Space: O(n²) — memo dict plus O(n) call stack
 def matrix_chain_memoization(dims, i, j, memo=None):
     if memo is None:
         memo = {}
@@ -27,6 +31,8 @@ def matrix_chain_memoization(dims, i, j, memo=None):
     return memo[(i, j)]
 
 
+# Time: O(n³) — three nested loops over chain lengths, start positions, and split points
+# Space: O(n²) — dp and split tables of size (n+1)×(n+1)
 def matrix_chain_tabulation(dims):
     n = len(dims) - 1
     dp = [[0] * (n + 1) for _ in range(n + 1)]

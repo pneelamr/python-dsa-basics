@@ -1,3 +1,5 @@
+# Time: O(n log n) average depending on gap sequence, O(n²) worst case
+# Space: O(1) — sorts in-place using only gap and key variables
 def shell_sort(arr):
     n = len(arr)
     gap = n // 2

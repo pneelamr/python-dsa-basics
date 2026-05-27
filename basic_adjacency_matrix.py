@@ -2,6 +2,8 @@ def create(n):
     return {'matrix': [[0] * n for _ in range(n)], 'n': n}
 
 
+# Time: O(1) add/remove/has_edge, O(V) neighbors — scans one full row
+# Space: O(V²) — stores V×V matrix regardless of edge count
 def add_edge(graph, u, v):
     graph['matrix'][u][v] = 1
     graph['matrix'][v][u] = 1

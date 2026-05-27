@@ -7,6 +7,8 @@ def create(arr):
     return ft
 
 
+# Time: O(log n) — update/prefix_sum traverse at most log n nodes via bit tricks
+# Space: O(n) — tree array of size n+1
 def update(ft, index, delta):
     while index <= ft['n']:
         ft['tree'][index] += delta

@@ -1,3 +1,5 @@
+# Time: O(n²) worst/average, O(n) best (already sorted with early exit)
+# Space: O(1) — sorts in-place with only a swap variable
 def bubble_sort(arr):
     n = len(arr)
     for i in range(n):

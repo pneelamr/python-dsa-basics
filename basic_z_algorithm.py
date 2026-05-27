@@ -1,3 +1,5 @@
+# Time: O(n+m) — Z array built in linear time over concatenated string of length n+m+1
+# Space: O(n+m) — Z array and concatenated string both of size n+m+1
 def z_search(text, pattern):
     s = pattern + '$' + text
     n = len(s)

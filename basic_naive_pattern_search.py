@@ -1,3 +1,5 @@
+# Time: O(n*m) — for each of n positions checks up to m pattern characters
+# Space: O(1) — only loop indices and matches list (output)
 def naive_pattern_search(text, pattern):
     n = len(text)
     m = len(pattern)

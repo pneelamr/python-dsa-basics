@@ -2,6 +2,8 @@ def create_node(value):
     return {'val': value, 'children': []}
 
 
+# Time: O(1) add_child, O(n) search/bfs/dfs — visits all n nodes
+# Space: O(n) — n nodes stored in the tree
 def add_child(parent, value):
     child = create_node(value)
     parent['children'].append(child)

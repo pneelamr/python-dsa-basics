@@ -2,6 +2,8 @@ def create(n):
     return {'parent': list(range(n)), 'rank': [0] * n}
 
 
+# Time: O(α(n)) amortized — path compression and union by rank give near-constant (inverse Ackermann)
+# Space: O(n) — parent and rank arrays of size n
 def find(ds, x):
     if ds['parent'][x] != x:
         ds['parent'][x] = find(ds, ds['parent'][x])  # path compression

@@ -1,3 +1,5 @@
+# Time: O(2^n) — each item is either included or excluded with no caching
+# Space: O(n) — recursive call stack depth
 def knapsack_recursive(weights, values, capacity, n):
     if n == 0 or capacity == 0:
         return 0
@@ -8,6 +10,8 @@ def knapsack_recursive(weights, values, capacity, n):
     return max(include, exclude)
 
 
+# Time: O(n*W) — at most n*W unique (n, capacity) subproblems cached
+# Space: O(n*W) — memo dict plus O(n) call stack
 def knapsack_memoization(weights, values, capacity, n, memo=None):
     if memo is None:
         memo = {}
@@ -24,6 +28,8 @@ def knapsack_memoization(weights, values, capacity, n, memo=None):
     return memo[(n, capacity)]
 
 
+# Time: O(n*W) — fills (n+1)×(capacity+1) dp table
+# Space: O(n*W) — dp table of size (n+1)×(W+1)
 def knapsack_tabulation(weights, values, capacity):
     n = len(weights)
     dp = [[0] * (capacity + 1) for _ in range(n + 1)]

@@ -1,3 +1,5 @@
+# Time: O(log log n) average (uniform data), O(n) worst (skewed distribution)
+# Space: O(1) — only uses index and position variables
 def interpolation_search(arr, target):
     low, high = 0, len(arr) - 1
 

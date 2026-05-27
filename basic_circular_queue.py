@@ -2,6 +2,8 @@ def create_queue(capacity):
     return {'data': [None] * capacity, 'front': 0, 'rear': 0, 'size': 0, 'capacity': capacity}
 
 
+# Time: O(1) — enqueue/dequeue use modular index arithmetic with no shifting
+# Space: O(n) — fixed-capacity array of n slots
 def enqueue(cq, value):
     if is_full(cq):
         raise OverflowError("circular queue is full")

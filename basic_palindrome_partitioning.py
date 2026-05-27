@@ -7,6 +7,8 @@ def is_palindrome(s, i, j):
     return True
 
 
+# Time: O(2^n) — exponential branching over partition positions without caching
+# Space: O(n) — call stack depth bounded by string length
 def palindrome_partition_recursive(s, i, j):
     if i >= j or is_palindrome(s, i, j):
         return 0
@@ -18,6 +20,8 @@ def palindrome_partition_recursive(s, i, j):
     return min_cuts
 
 
+# Time: O(n²) — n² subproblems with palindrome check per split (amortized)
+# Space: O(n²) — memo dict plus O(n) call stack
 def palindrome_partition_memoization(s, i, j, memo=None):
     if memo is None:
         memo = {}
@@ -34,6 +38,8 @@ def palindrome_partition_memoization(s, i, j, memo=None):
     return memo[(i, j)]
 
 
+# Time: O(n²) — precomputes palindrome table in O(n²) then fills dp in O(n²)
+# Space: O(n²) — palindrome table plus O(n) dp array
 def palindrome_partition_tabulation(s):
     n = len(s)
 

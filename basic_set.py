@@ -1,3 +1,5 @@
+# Time: O(1) average — add/remove/contains use Python set hashing
+# Space: O(n) — stores n elements
 def add(s, value):
     s.add(value)
 

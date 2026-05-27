@@ -1,3 +1,5 @@
+# Time: O(1) average — insert/get/delete use Python dict hashing
+# Space: O(n) — stores n key-value pairs
 def insert(table, key, value):
     table[key] = value
 

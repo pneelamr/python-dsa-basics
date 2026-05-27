@@ -1,3 +1,5 @@
+# Time: O(n²) all cases — always scans remaining unsorted portion
+# Space: O(1) — sorts in-place with no extra allocations
 def selection_sort(arr):
     n = len(arr)
     for i in range(n):

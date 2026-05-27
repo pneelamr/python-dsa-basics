@@ -1,3 +1,5 @@
+# Time: O(n log n) — divides array into halves and merges in linear time each level
+# Space: O(n) — merge creates temporary arrays totaling n elements
 def merge_sort(arr):
     if len(arr) <= 1:
         return arr

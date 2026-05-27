@@ -1,3 +1,5 @@
+# Time: O(V³) — three nested loops each iterating over V vertices
+# Space: O(V²) — distance and next_vertex matrices of size V×V
 def floyd_warshall(graph):
     vertices = list(graph.keys())
     n = len(vertices)

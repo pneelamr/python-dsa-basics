@@ -1,3 +1,5 @@
+# Time: O(log n) — exponential range-finding then binary search, both O(log n)
+# Space: O(1) — iterative with only index variables
 def exponential_search(arr, target):
     n = len(arr)
     if n == 0:

@@ -1,3 +1,5 @@
+# Time: O(n+k) where k=value range — counts n elements then iterates over k buckets
+# Space: O(k) — count array proportional to value range k
 def counting_sort(arr):
     if not arr:
         return arr

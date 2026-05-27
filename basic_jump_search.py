@@ -1,6 +1,8 @@
 import math
 
 
+# Time: O(√n) — jumps forward √n steps then does linear scan of at most √n elements
+# Space: O(1) — only uses index variables
 def jump_search(arr, target):
     n = len(arr)
     step = int(math.sqrt(n))

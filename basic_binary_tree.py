@@ -2,6 +2,8 @@ def create_node(value):
     return [value, None, None]  # [value, left, right]
 
 
+# Time: O(h) where h=height — O(n) worst case (skewed), O(log n) balanced
+# Space: O(h) — recursive call stack depth equals tree height
 def insert(root, value):
     if root is None:
         return create_node(value)

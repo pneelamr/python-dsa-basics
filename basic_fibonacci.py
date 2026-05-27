@@ -1,9 +1,13 @@
+# Time: O(2^n) — each call branches into two recursive calls with no caching
+# Space: O(n) — call stack depth reaches n
 def fibonacci_recursive(n):
     if n <= 1:
         return n
     return fibonacci_recursive(n - 1) + fibonacci_recursive(n - 2)
 
 
+# Time: O(n) — each subproblem computed once and cached
+# Space: O(n) — memo dict stores n results plus O(n) call stack
 def fibonacci_memoization(n, memo={}):
     if n <= 1:
         return n
@@ -13,6 +17,8 @@ def fibonacci_memoization(n, memo={}):
     return memo[n]
 
 
+# Time: O(n) — single pass filling dp table
+# Space: O(n) — dp array of size n+1
 def fibonacci_tabulation(n):
     if n <= 1:
         return n
@@ -23,6 +29,8 @@ def fibonacci_tabulation(n):
     return dp[n]
 
 
+# Time: O(n) — single pass with two rolling variables
+# Space: O(1) — only two variables needed regardless of n
 def fibonacci_optimized(n):
     if n <= 1:
         return n

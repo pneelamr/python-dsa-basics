@@ -1,6 +1,8 @@
 import heapq
 
 
+# Time: O(log n) — push/pop maintain heap property by sifting up/down
+# Space: O(n) — stores n elements in the heap list
 def push(heap, value):
     heapq.heappush(heap, value)
 

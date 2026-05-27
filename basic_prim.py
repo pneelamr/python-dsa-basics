@@ -1,6 +1,8 @@
 import heapq
 
 
+# Time: O((V+E) log V) — each edge may be pushed to heap; heap ops are O(log V)
+# Space: O(V) — visited set, mst list, and heap each bounded by V or E entries
 def prim(graph, start):
     visited = {start}
     mst = []

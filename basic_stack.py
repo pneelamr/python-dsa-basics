@@ -1,3 +1,5 @@
+# Time: O(1) — push and pop are both constant time operations
+# Space: O(1) — no extra space per operation (overall stack is O(n))
 def push(stack, value):
     stack.append(value)
 

@@ -1,3 +1,5 @@
+# Time: O(n+m) average (rare collisions), O(n*m) worst (all positions collide)
+# Space: O(1) — only hash variables and index counters
 def rabin_karp(text, pattern, base=256, mod=101):
     n = len(text)
     m = len(pattern)

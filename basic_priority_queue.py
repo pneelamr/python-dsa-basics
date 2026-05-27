@@ -1,6 +1,8 @@
 import heapq
 
 
+# Time: O(log n) — enqueue/dequeue maintain heap order by sifting up/down
+# Space: O(n) — stores n (priority, value) pairs in the heap
 def enqueue(pq, value, priority):
     heapq.heappush(pq, (priority, value))
 
