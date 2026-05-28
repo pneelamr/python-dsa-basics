@@ -1,6 +1,6 @@
 # python-dsa-basics
 
-Procedural Python implementations of common data structures and algorithms — no OOP, no external libraries, plain Python types throughout.
+Procedural Python implementations of common data structures and algorithms. No OOP, no external libraries, plain Python types throughout.
 
 Each file follows a consistent format:
 - 3-line description of the concept
