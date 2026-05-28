@@ -2,6 +2,8 @@
 
 Procedural Python implementations of common data structures and algorithms. No OOP, no external libraries, plain Python types throughout.
 
+📄 **[Data Structures and Algorithms - A Reference Deck.pdf](./Data%20Structures%20and%20Algorithms%20-%20A%20Reference%20Deck.pdf)** — companion slide deck covering the concepts implemented here.
+
 Each file follows a consistent format:
 - 3-line description of the concept
 - `# Time:` and `# Space:` complexity comments above every function
